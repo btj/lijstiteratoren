@@ -63,8 +63,7 @@ public class BerekendeLijst extends Lijst {
 	@Override
 	public boolean heeftZelfdeGedragAls(Lijst andere) {
 		return andere instanceof BerekendeLijst l &&
-				start == l.start &&
-				size == l.size;
+				size == l.size && (size == 0 || start == l.start);
 	}
 
 }
