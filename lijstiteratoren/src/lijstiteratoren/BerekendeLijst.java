@@ -31,6 +31,12 @@ public class BerekendeLijst extends Lijst {
 	}
 	
 	/**
+	 * @post | getIteratoren().isEmpty()
+	 * @post | getElements().length == 0
+	 */
+	public BerekendeLijst() {}
+	
+	/**
 	 * @throws UnsupportedOperationException | getElements().length != 0 && element != (long)getElements()[0] + getElements().length
 	 * @mutates_properties | getElements()
 	 * @post | getElements().length == old(getElements()).length + 1
